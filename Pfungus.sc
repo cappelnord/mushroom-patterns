@@ -7,6 +7,10 @@ Pfungus : Pattern {
 
 
 	*new {|key="Clathrus archeri", x=0.5, y=0.5, repeats=inf|
+		fungi.isNil.if {
+			fungi = Dictionary();
+		};
+
 		^super.newCopyArgs(key, x, y, repeats);
 	}
 
